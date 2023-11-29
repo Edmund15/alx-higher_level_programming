@@ -4,7 +4,5 @@ def uppercase(s):
             upper_char = chr(ord(char) - ord('a') + ord('A'))
         else:
             upper_char = char
-        
         print(upper_char, end='')
-
     print()

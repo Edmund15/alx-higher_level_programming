@@ -3,6 +3,4 @@ def pow(a, b):
 
     for _ in range(b):
         result *= a
-
     return result
-
