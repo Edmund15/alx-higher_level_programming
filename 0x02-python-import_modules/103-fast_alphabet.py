@@ -2,4 +2,4 @@
 import string
 
 if __name__ == "__main__":
-    print(*(string.ascii_uppercase), sep='', end='\n')
+    print(*string.ascii_uppercase, sep='', end='\n')
