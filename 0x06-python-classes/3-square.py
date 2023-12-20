@@ -1,39 +1,39 @@
 #!/usr/bin/python3
+"""
+Module for Square class.
+"""
+
 
 class Square:
     """
-    Class Square that defines a square with a private instance attribute size.
+    Defines a square.
+
+    Attributes:
+        __size (int): The size of the square.
     """
 
     def __init__(self, size=0):
         """
-        Initializes a new instance of the Square class.
+        Initializes a new Square.
 
         Parameters:
-          - size (int): The size of the square (default is 0).
-        """
-        self.__size = size
-        self.__validate_size()
-
-    def __validate_size(self):
-        """
-        Validates the size attribute.
+            size (int): The size of the square.
 
         Raises:
-          - TypeError: If size is not an integer.
-          - ValueError: If size is less than 0.
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
         """
-        if not isinstance(self.__size, int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif self.__size < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
+        self.__size = size
 
     def area(self):
         """
-        Computes and returns the area of the square.
+        Computes the area of the square.
 
         Returns:
-          - int: The area of the square.
+            int: The area of the square.
         """
         return self.__size ** 2
-
